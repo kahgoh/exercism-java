@@ -5,6 +5,10 @@ on:
   schedule:
     - cron: '0 0 15 * *'
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   configlet-auto-sync:
     runs-on: ubuntu-latest
